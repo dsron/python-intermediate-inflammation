@@ -7,6 +7,7 @@ from inflammation import models, views
 
 
 def main(args):
+
     """The MVC Controller of the patient inflammation data system.
 
     The Controller is responsible for:
@@ -14,6 +15,7 @@ def main(args):
     - passing data between models and views
     """
     InFiles = args.infiles
+
     if not isinstance(InFiles, list):
         InFiles = [args.infiles]
 
@@ -26,6 +28,7 @@ def main(args):
         views.visualize(view_data)
 
 if __name__ == "__main__":
+
     parser = argparse.ArgumentParser(
         description='A basic patient inflammation data management system')
 
