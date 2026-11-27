@@ -1,7 +1,9 @@
 """Tests for statistics functions within the Model layer."""
 
+import os
 import numpy as np
 import numpy.testing as npt
+import pytest
 
 from inflammation.models import daily_mean
 from inflammation.models import daily_max, daily_min, patient_normalise
